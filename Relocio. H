@@ -1,0 +1,22 @@
+#ifndef RELOGIO_H
+#define RELOGIO_H
+
+
+class Relogio
+{
+    public:
+        Relogio();
+        Relogio(int h, int m, int s);
+       int hora;
+       int minuto;
+       int segundo;
+       setHorario(int h, int m, int s);
+       getHora();
+       getMinuto();
+       getSegundo();
+       avancarHorario();
+
+    private:
+};
+
+#endif // RELOGIO_H
