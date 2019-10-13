@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+#include "Relogio.cpp"
+using namespace std;
+
+int main()
+{
+   Relogio eca = Relogio(20, 20, 59);
+   Relogio *eca1= new Relogio(20,59,59);
+   Relogio *eca2= new Relogio(23,59,59);
+   eca.avancarHorario();
+   eca1->avancarHorario();
+   eca2->avancarHorario();
+   cout << eca.hora << ":" << eca.minuto << ":" << eca.segundo << endl;
+   cout << eca1->hora << ":" << eca1->minuto << ":" << eca1->segundo << endl;
+   cout << eca2->hora << ":" << eca2->minuto << ":" << eca2->segundo << endl;
+   
+   system("pause");
+   
+    return 0;
+}
